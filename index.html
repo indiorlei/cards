@@ -1,45 +1,9 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <meta charset="UTF-8">
-      <title>Credit Card Form</title>
-      <style>
-         .forAppleCardScan {
-            width: 1px;
-            height: 1px;
-            margin-left: -1000px;
-            position: fixed;
-            display: block;
-         }
-       </style>
-   </head>
+      
+      </head>
    <body>
-      <form>
-         <fieldset>
-            <label for="ccName">Name on card</label>
-            <input id="ccName" name="ccName" type="text">
-            
-            <label for="cc_number">Credit Card Number</label>
-            <input id="cc_number" name="cc_number" type="text" >
-            
-            <label for="cc_exp_date">Expiration Date</label>
-            <input id="cc_exp_date" type="text" placeholder="mm/yyyy" >
-            <input class="forAppleCardScan" id="cardExpirationMonth" type="text">
-            <input class="forAppleCardScan" id="cardExpirationYear" type="text">
-            
-	    <input type="submit" value="Charge">
-         </fieldset>
-      </form>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/1.0.2/jquery.payment.js"></script>
-   <script type="text/javascript">
-   		$('#cardExpirationMonth, #cardExpirationYear').change(function() {
-        	  var month = $('#cardExpirationMonth').val();
-        	  var year = $('#cardExpirationYear').val();
-        	  $('#cc_exp_date').val(month+'/'+year)
-		});
-		$('#cc_number').payment('formatCardNumber');
-		$('#cc_exp_date').payment('formatCardExpiry');
-   </script>
+      
    </body>
 </html>
